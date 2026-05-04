@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d13c3089720ec090671ded25dbb79267 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d13c3089720ec090671ded25dbb79267" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d13c3089720ec090671ded25dbb79267 = L.map(
+                "map_d13c3089720ec090671ded25dbb79267",
+                {
+                    center: [45.4, 36.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3a1e799c896145790a303bbcb0cc751a = L.tileLayer(
+                "https://mt1.google.com/vt/lyrs=s\u0026x={x}\u0026y={y}\u0026z={z}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Google Satellite",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3a1e799c896145790a303bbcb0cc751a.addTo(map_d13c3089720ec090671ded25dbb79267);
+        
+    
+            var tile_layer_c1eef81c12ed0bb630bf7deeb907c144 = L.tileLayer(
+                "https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "OpenSeaMap",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c1eef81c12ed0bb630bf7deeb907c144.addTo(map_d13c3089720ec090671ded25dbb79267);
+        
+    
+            var marker_bfe1c49870908470999bc80d875efaad = L.marker(
+                [45.391, 36.052],
+                {
+}
+            ).addTo(map_d13c3089720ec090671ded25dbb79267);
+        
+    
+            var icon_61923d70239961ac9c9036e0464e0379 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "anchor",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d64a668ceec15c3ab66074b7e870eb52 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_8bff3b633072ef418e07a2f4c448e157 = $(`<div id="html_8bff3b633072ef418e07a2f4c448e157" style="width: 100.0%; height: 100.0%;"><div style='width:150px; font-family:sans-serif;'><b>⚓ Новоотрадное</b><br><br><button onclick="window.Telegram.WebApp.sendData('⚓ Новоотрадное')" style='cursor:pointer; padding:8px; background:#0088cc; color:white; border:none; border-radius:5px; width:100%; font-weight:bold;'>Выбрать сектор</button></div></div>`)[0];
+                popup_d64a668ceec15c3ab66074b7e870eb52.setContent(html_8bff3b633072ef418e07a2f4c448e157);
+            
+        
+
+        marker_bfe1c49870908470999bc80d875efaad.bindPopup(popup_d64a668ceec15c3ab66074b7e870eb52)
+        ;
+
+        
+    
+    
+                marker_bfe1c49870908470999bc80d875efaad.setIcon(icon_61923d70239961ac9c9036e0464e0379);
+            
+    
+            var marker_22de98807e378245fd7749d9235ab16f = L.marker(
+                [45.424, 36.079],
+                {
+}
+            ).addTo(map_d13c3089720ec090671ded25dbb79267);
+        
+    
+            var icon_5ef3b3fcd23349be93f457943a1fb725 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "anchor",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6e93f3bd406cf21d2e3881b68620f260 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c6d7b5ce57d96fa434af7d7b47a0fabc = $(`<div id="html_c6d7b5ce57d96fa434af7d7b47a0fabc" style="width: 100.0%; height: 100.0%;"><div style='width:150px; font-family:sans-serif;'><b>🎣 Золотое</b><br><br><button onclick="window.Telegram.WebApp.sendData('🎣 Золотое')" style='cursor:pointer; padding:8px; background:#0088cc; color:white; border:none; border-radius:5px; width:100%; font-weight:bold;'>Выбрать сектор</button></div></div>`)[0];
+                popup_6e93f3bd406cf21d2e3881b68620f260.setContent(html_c6d7b5ce57d96fa434af7d7b47a0fabc);
+            
+        
+
+        marker_22de98807e378245fd7749d9235ab16f.bindPopup(popup_6e93f3bd406cf21d2e3881b68620f260)
+        ;
+
+        
+    
+    
+                marker_22de98807e378245fd7749d9235ab16f.setIcon(icon_5ef3b3fcd23349be93f457943a1fb725);
+            
+    
+            var layer_control_3e93c0a2f4627700205395bc6c555c5f_layers = {
+                base_layers : {
+                    "https://mt1.google.com/vt/lyrs=s\u0026x={x}\u0026y={y}\u0026z={z}" : tile_layer_3a1e799c896145790a303bbcb0cc751a,
+                },
+                overlays :  {
+                    "\u0413\u043b\u0443\u0431\u0438\u043d\u044b" : tile_layer_c1eef81c12ed0bb630bf7deeb907c144,
+                },
+            };
+            let layer_control_3e93c0a2f4627700205395bc6c555c5f = L.control.layers(
+                layer_control_3e93c0a2f4627700205395bc6c555c5f_layers.base_layers,
+                layer_control_3e93c0a2f4627700205395bc6c555c5f_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_d13c3089720ec090671ded25dbb79267);
+
+        
+</script>
+</html>
